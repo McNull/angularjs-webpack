@@ -1,11 +1,11 @@
 var _routes = [];
 
-function get() {
+function getRoutes() {
   return _routes.concat();
 }
 
-function register(entry) {
+function addRoute(entry) {
   _routes.push(entry);
 }
 
-export { get, register };
+export { getRoutes, addRoute };

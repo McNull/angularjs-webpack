@@ -1,0 +1,9 @@
+app {
+  main {
+    ng-view {
+      &> md-content {
+        padding: 20px;
+      }
+    }
+  }
+}
