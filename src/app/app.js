@@ -1,5 +1,4 @@
 import './core';
-import '../style/app.css';
 
 let app = () => {
   return {
