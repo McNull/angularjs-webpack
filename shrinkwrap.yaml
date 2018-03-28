@@ -1,5 +1,11 @@
 dependencies:
   angular: 1.6.9
+  angular-animate: 1.6.9
+  angular-aria: 1.6.9
+  angular-material: 1.1.8
+  angular-messages: 1.6.9
+  angular-resource: 1.6.9
+  angular-route: 1.6.9
 devDependencies:
   angular-mocks: 1.6.9
   autoprefixer: 6.7.7
@@ -145,10 +151,39 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  /angular-animate/1.6.9:
+    dev: false
+    resolution:
+      integrity: sha512-3/fqrmT6mJgB2O6oDvXDlNP6AJVqUXLWZq/P87Xo7Wt0JjcSmhJSQ02Yp7gm0Pkd5SXMKHICLpn/iEJPyse9fg==
+  /angular-aria/1.6.9:
+    dev: false
+    resolution:
+      integrity: sha512-I2SR17Ux0o0R9KD3DRzjR5NNX3pUSKvtWYLFCLg22qvR5+736olCQSyptNIvKsvjALwfXBw1Irdlq0jyohDn+Q==
+  /angular-material/1.1.8:
+    dev: false
+    peerDependencies:
+      angular: '>=1.4 <1.7'
+      angular-animate: '>=1.4 <1.7'
+      angular-aria: '>=1.4 <1.7'
+      angular-messages: '>=1.4 <1.7'
+    resolution:
+      integrity: sha512-VNRKB3G65zb1ZNWThb5wyKCuYvjwW9O8O3RZQ4cnDXHxa6YdjnZvkEQnpsiuIvQyqP18itmM+NJZPOPGXxAIaQ==
+  /angular-messages/1.6.9:
+    dev: false
+    resolution:
+      integrity: sha512-/2xvG6vDC+Us8h0baSa1siDKwPj5R2A7LldxxhK2339HInc09bq9shMVCUy9zqnuvwnDUJ/DSgkSaBoSHSZrqg==
   /angular-mocks/1.6.9:
     dev: true
     resolution:
       integrity: sha512-5aEwXmfd5DQvb64pOgP2W2D3ozAQSARkB6q+6NQfUJvJs9bD2YcExrUc1P4EbiIuyWag2OQM+pIKUNojVi3SBg==
+  /angular-resource/1.6.9:
+    dev: false
+    resolution:
+      integrity: sha512-RNGjhQWGVz5EB1Z1miQNkpwhp2htcBgKRMxeXtNUZf53O1AxwrPy9HajDXi2Lub+tO72TPQOy4HOMW4xmGXz6g==
+  /angular-route/1.6.9:
+    dev: false
+    resolution:
+      integrity: sha512-giE0PD0T17ZvtJmAB6di27YPPSzYC1kP1BDpM2ZIGZUbs02PvJWRIgYA8z3dy9olzCS35TOwxmE2fJoHWTMm1A==
   /angular/1.6.9:
     dev: false
     resolution:
@@ -6449,7 +6484,13 @@ shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
   angular: ^1.5.0
+  angular-animate: ^1.6.9
+  angular-aria: ^1.6.9
+  angular-material: ^1.1.8
+  angular-messages: ^1.6.9
   angular-mocks: ^1.5.0
+  angular-resource: ^1.6.9
+  angular-route: ^1.6.9
   autoprefixer: ^6.0.3
   babel-core: ^6.2.1
   babel-loader: ^6.2.0
