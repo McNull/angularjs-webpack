@@ -11,6 +11,7 @@ devDependencies:
   autoprefixer: 6.7.7
   babel-core: 6.26.0
   babel-loader: 6.4.1
+  babel-plugin-angularjs-annotate: 0.8.2
   babel-preset-es2015: 6.24.1
   copy-webpack-plugin: 4.0.1
   css-loader: 0.26.1
@@ -560,6 +561,14 @@ packages:
     dev: true
     resolution:
       integrity: sha1-8830cDhYA1sqKVHG7F7fbGLyYw4=
+  /babel-plugin-angularjs-annotate/0.8.2:
+    dependencies:
+      babel-code-frame: 6.26.0
+      babel-types: 6.26.0
+      simple-is: 0.2.0
+    dev: true
+    resolution:
+      integrity: sha512-gkPuZr4aYxhJPjqrwYlnXQIzlRagp+vxJhqaoYc3w9gBZ2/H2fKIt7a3iXoC5JQGm7ee9Lj7CWPfnfcYX/34Iw==
   /babel-plugin-check-es2015-constants/6.22.0:
     dependencies:
       babel-runtime: 6.26.0
@@ -5860,6 +5869,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+  /simple-is/0.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-Krt1qt453rXMgVzhDmGRFkhQuvA=
   /slash/1.0.0:
     dev: true
     engines:
@@ -6954,6 +6967,7 @@ specifiers:
   autoprefixer: ^6.0.3
   babel-core: ^6.2.1
   babel-loader: ^6.2.0
+  babel-plugin-angularjs-annotate: ^0.8.2
   babel-preset-es2015: ^6.1.18
   copy-webpack-plugin: 4.0.1
   css-loader: 0.26.1
