@@ -1,12 +1,20 @@
-import './core';
+import { get as getRoutes } from './core';
 
-let app = () => {
-  return {
-    template: require('./app.html'),
-    controller: 'AppCtrl',
-    controllerAs: 'app'
-  };
-};
+////////////////////////////////////////////////////////////////////////////////
+
+const app = angular.module('app', [
+  'app.core'
+]);
+
+////////////////////////////////////////////////////////////////////////////////
+
+app.component('app', {
+  template: require('./app.html'),
+  controller: 'AppCtrl',
+  controllerAs: 'app'
+});
+
+////////////////////////////////////////////////////////////////////////////////
 
 class AppCtrl {
   constructor() {
@@ -14,8 +22,27 @@ class AppCtrl {
   }
 }
 
-angular.module('app', [
-  'app.core'
-])
-  .directive('app', app)
-  .controller('AppCtrl', AppCtrl);
+////////////////////////////////////////////////////////////////////////////////
+
+app.controller('AppCtrl', AppCtrl);
+
+////////////////////////////////////////////////////////////////////////////////
+
+app.config(($routeProvider) => {
+  getRoutes().forEach((route) => {
+    $routeProvider.when(route.url, route);
+  });
+
+  $routeProvider.otherwise({
+    redirectTo: '/'
+  });
+});
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
