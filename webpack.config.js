@@ -105,8 +105,8 @@ module.exports = function makeWebpackConfig() {
       loader: isTest ? 'null-loader' : ExtractTextPlugin.extract({
         fallbackLoader: 'style-loader',
         loader: [
-          {loader: 'css-loader', query: {sourceMap: true}},
-          {loader: 'postcss-loader'}
+          { loader: 'css-loader', query: { sourceMap: true } },
+          { loader: 'postcss-loader' }
         ],
       })
     }, {
@@ -143,7 +143,7 @@ module.exports = function makeWebpackConfig() {
       query: {
         esModules: true
       }
-    })
+    });
   }
 
   /**
@@ -151,8 +151,8 @@ module.exports = function makeWebpackConfig() {
    * Reference: https://github.com/postcss/autoprefixer-core
    * Add vendor prefixes to your css
    */
-   // NOTE: This is now handled in the `postcss.config.js`
-   //       webpack2 has some issues, making the config file necessary
+  // NOTE: This is now handled in the `postcss.config.js`
+  //       webpack2 has some issues, making the config file necessary
 
   /**
    * Plugins
@@ -183,8 +183,8 @@ module.exports = function makeWebpackConfig() {
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
       // Disabled when in test mode or not in build mode
-      new ExtractTextPlugin({filename: 'css/[name].css', disable: !isProd, allChunks: true})
-    )
+      new ExtractTextPlugin({ filename: 'css/[name].css', disable: !isProd, allChunks: true })
+    );
   }
 
   // Add build specific plugins
@@ -207,7 +207,7 @@ module.exports = function makeWebpackConfig() {
       new CopyWebpackPlugin([{
         from: __dirname + '/src/public'
       }])
-    )
+    );
   }
 
   /**

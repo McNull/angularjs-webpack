@@ -7,7 +7,7 @@ let app = () => {
     template: require('./app.html'),
     controller: 'AppCtrl',
     controllerAs: 'app'
-  }
+  };
 };
 
 class AppCtrl {
