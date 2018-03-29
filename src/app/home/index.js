@@ -6,7 +6,7 @@ import { addRoute } from '../core';
 addRoute({
   url: '/',
   template: require('./home.html'),
-  controller: /* @ngInject */ ($scope, $timeout, appToolbar, appBackdrop) => {
+  controller: /* @ngInject */ ($scope, $timeout, appToolbar, appBackdrop, appSidebar) => {
 
     ////////////////////////////////////////////////////////////////////////////
 
@@ -50,6 +50,12 @@ addRoute({
     $scope.displayBackdrop = () => {
       appBackdrop.visible = true;
       $timeout(() => appBackdrop.visible = false, 1000);
+    };
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    $scope.displaySidebar = () => {
+      appSidebar.visible = true;
     };
 
     ////////////////////////////////////////////////////////////////////////////

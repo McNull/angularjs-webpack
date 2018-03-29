@@ -3,11 +3,18 @@
 
 /* @ngInject */
 class ToolbarController {
-  constructor(appToolbar) {
+  constructor(appToolbar, appSidebar) {
     this.state = appToolbar;
+    this.sidebar = appSidebar;
+  }
+
+  displaySidebar() {
+    this.sidebar.visible = true;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
 export { ToolbarController };
+
+////////////////////////////////////////////////////////////////////////////////

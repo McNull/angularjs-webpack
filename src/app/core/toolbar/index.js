@@ -7,7 +7,9 @@ import { appToolbar } from './toolbar-service';
 
 ////////////////////////////////////////////////////////////////////////////////
 
-angular.module('app.core.toolbar', [])
+angular.module('app.core.toolbar', [
+  'app.core.sidebar'
+])
   .component('appToolbar', component)
   .factory('appToolbar', appToolbar);
 
