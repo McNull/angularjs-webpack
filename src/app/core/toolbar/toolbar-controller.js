@@ -1,6 +1,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
+/* @ngInject */
 class ToolbarController {
   constructor(appToolbar) {
     this.state = appToolbar;

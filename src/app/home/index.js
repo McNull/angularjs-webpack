@@ -4,7 +4,9 @@ import { addRoute } from '../core';
 addRoute({
   url: '/',
   template: require('./home.html'),
-  controller: () => {}
+  // controller: ($scope) => {
+  //   /*@ngInject*/
+  // }
 });
 
 angular.module('app.home', [
