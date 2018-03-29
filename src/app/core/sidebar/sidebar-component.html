@@ -1,3 +1,13 @@
 <div class="app-sidebar" ng-class="{ visible: state.visible }">
-  dfdjkfdsjkfsdjk
+  <md-content>
+    <ul class="app-sidebar--items">
+
+      <li ng-repeat="menuItem in state.menuItems"
+          class="app-sidebar--item active">
+        <span class="app-sidebar--icon {{ menuItem.icon }}"></span>
+        <span class="app-sidebar--text">{{ menuItem.text }}</span>
+      </li>
+
+    </ul>
+  </md-content>
 </div>

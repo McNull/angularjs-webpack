@@ -58,6 +58,8 @@ addRoute({
       appSidebar.visible = true;
     };
 
+    $scope.displaySidebar();
+
     ////////////////////////////////////////////////////////////////////////////
   }
 });
