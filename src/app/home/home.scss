@@ -1,0 +1,9 @@
+.home-button {
+
+  transition: all 0.5s;
+
+  &.fa-frown-o {
+    color: red;
+    transform: scale(2.5);
+  }
+}

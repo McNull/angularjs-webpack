@@ -1,10 +1,12 @@
 
+import './home.scss';
+
 import { addRoute } from '../core';
 
 addRoute({
   url: '/',
   template: require('./home.html'),
-  controller: /* @ngInject */ ($scope, appToolbar) => {
+  controller: /* @ngInject */ ($scope, $timeout, appToolbar, appBackdrop) => {
 
     ////////////////////////////////////////////////////////////////////////////
 
@@ -27,7 +29,7 @@ addRoute({
       order: 10,
       onClick: () => {
         happy = !happy;
-        happyButton.icon = 'fa ' + (happy ? 'fa-smile-o' : 'fa-frown-o');
+        happyButton.icon = 'fa home-button ' + (happy ? 'fa-smile-o' : 'fa-frown-o');
       }
     };
 
@@ -42,6 +44,13 @@ addRoute({
       appToolbar.removeButton(loveButton);
       appToolbar.removeButton(happyButton);
     });
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    $scope.displayBackdrop = () => {
+      appBackdrop.visible = true;
+      $timeout(() => appBackdrop.visible = false, 1000);
+    };
 
     ////////////////////////////////////////////////////////////////////////////
   }
