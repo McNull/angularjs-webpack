@@ -7,20 +7,10 @@
 
   <h2 flex="" md-truncate="">{{ toolbar.state.title }}</h2>
 
-
-    <md-button
-      ng-repeat="button in toolbar.state.buttons"
-      class="md-icon-button"
-      ng-click="button.onClick($event, button)">
-      <md-icon>
-        <span class="{{ button.icon }}"></span>
-      </md-icon>
-    </md-button>
-
-    <!-- <md-button class="md-icon-button" aria-label="More">
-      <md-icon>
-        <span class="fa fa-bars"></span>
-      </md-icon>
-    </md-button> -->
+  <md-button ng-repeat="button in toolbar.state.buttons" class="md-icon-button" ng-click="button.onClick($event, button)">
+    <md-icon>
+      <span class="{{ button.icon }}"></span>
+    </md-icon>
+  </md-button>
 
 </md-toolbar>
