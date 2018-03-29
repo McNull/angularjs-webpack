@@ -26,7 +26,8 @@
     "angular-material": "^1.1.8",
     "angular-messages": "^1.6.9",
     "angular-resource": "^1.6.9",
-    "angular-route": "^1.6.9"
+    "angular-route": "^1.6.9",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",

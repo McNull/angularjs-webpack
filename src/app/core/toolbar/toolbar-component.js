@@ -1,0 +1,14 @@
+
+import { ToolbarController } from './toolbar-controller';
+
+////////////////////////////////////////////////////////////////////////////////
+
+const component = {
+  template: require('./toolbar-component.html'),
+  controller: ToolbarController,
+  controllerAs: 'toolbar'
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+export { component };

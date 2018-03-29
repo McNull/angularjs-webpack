@@ -227,7 +227,8 @@ module.exports = function makeWebpackConfig() {
   config.devServer = {
     contentBase: './src/public',
     stats: 'minimal',
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    headers: { "Access-Control-Allow-Origin": "*" }
   };
 
   return config;
