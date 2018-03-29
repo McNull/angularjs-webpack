@@ -2,15 +2,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 /* @ngInject */
-class ToolbarController {
-  constructor(appToolbar, appSidebar) {
-    this.state = appToolbar;
-    this.sidebar = appSidebar;
-  }
+function ToolbarController(appToolbar, appSidebar) {
+  this.state = appToolbar;
+  this.sidebar = appSidebar;
 
-  displaySidebar() {
+  this.displaySidebar = () => {
     this.sidebar.visible = true;
-  }
+  };
 }
 
 ////////////////////////////////////////////////////////////////////////////////
